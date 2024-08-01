@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <style> 
+          
+        </style>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    </head>
+    <body class="relative">
+        <nav class="bg-[#023e8a] sticky top-0" style="z-index: 9999;">
+            <div class="container mx-auto px-0 py-3 flex flex-wrap items-center justify-between">
+                <div class="logo">
+                  <img src="logo.png" alt="Serenity Logo" class="h-16 w-16 object-contain">
+                <span><a class="text-white text-lg font-semibold" href="index.html">SERENITY</a></span>
+                </div>
+                <button class="text-white md:hidden" id="navbar-toggler">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:flex md:items-center md:w-auto " id="navbarNav">
+                    <ul class="flex flex-col md:flex-row md:space-x-4 mt-3 md:mt-0">
+                        <li><a class="text-white block px-3 py-2 rounded-md" href="#">Home</a></li>
+                        <li><a class="text-white block px-3 py-2 rounded-md" href="Health Conditions.html">Mental Health </a></li>
+                        <li><a class="text-white block px-3 py-2 rounded-md" href="selfcare.html">Self-Care</a></li>
+                        <li><a class="text-white block px-3 py-2 rounded-md" href="resources.html">Resources</a></li>
+                        <li><a class="text-white block px-3 py-2 rounded-md" href="whyserenity.html">Why Serenity</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    <section style="background-color: #023e8a;">
+        
+        <div class="slideshow-container" style="background-color:#023e8a">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">1 / 10</div> -->
+              <img src="1.jpeg" style="width:100%">
+              <!-- <div class="text">Caption Text</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">2 / 10</div> -->
+              <img src="2.jpeg" style="width:100%">
+              <!-- <div class="text">Caption Two</div> -->
+            </div>
+          
+            <div class="mySlides fade">
+              <!-- <div class="numbertext">3 / 10</div> -->
+              <img src="3.jpeg" style="width:100%">
+              <!-- <div class="text">Caption Three</div> -->
+            </div>
+
+            <div class="mySlides fade">
+                <!-- <div class="numbertext">4 / 10</div> -->
+                <img src="4.jpeg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">5 / 10</div> -->
+                <img src="5.jpeg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">6 / 10</div> -->
+                <img src="6.jpeg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">7 / 10</div> -->
+                <img src="7.jpeg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">8 / 10</div> -->
+                <img src="8.jpeg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">9 / 10</div> -->
+                <img src="9.jpeg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+
+              <div class="mySlides fade">
+                <!-- <div class="numbertext">10 / 10</div> -->
+                <img src="10.jpeg" style="width:100%">
+                <!-- <div class="text">Caption Three</div> -->
+              </div>
+          
+        
+          </div>
+        </section>
+          <br>
+          <!-- kaaam-  -->
+          <header>
+            <div class="heading-container">
+            <h1> Feeling Overwhelmed?</h1>
+            <h6>We're here to help.</h6>
+            <button id="openModal" class="px-4 py-2 bg-blue-500 text-white rounded">Get Help</button>
+
+  <!-- Modal -->
+  <div id="videoModal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white rounded-lg overflow-hidden shadow-lg max-w-lg w-full">
+      <div class="relative">
+        <video id="videoElement" class="w-full h-full" controls>
+          <source src="gethelp.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <button id="closeModal" class="absolute top-0 right-0 m-4 text-white bg-red-500 rounded-full p-2">
+        &times;
+      </button>
+    </div>
+  </div>
+ 
+            </div>
+        </header>
+<br>
+        <section class="bg-gray-100 p-4">
+            <h2 class="text-center font-semibold text-3xl">What's been on your mind lately? </h2>
+           <div class="flex flex-wrap justify-center items-center p-4 bg-gray-100">
+           
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 text-center">
+                <a href="Health Conditions.html#section1">
+                <img src="anxiety.jpeg" alt="Photo 1" class="w-full h-full rounded-lg">
+                <strong class="text-2xl">Anxiety</strong></a>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 text-center flex justify-center space-x-6 pt-20">
+              <a href="Health Conditions.html#section2">
+                <img src="depression.jpeg" alt="Photo 2" class="w-300 h-300 rounded-lg">
+               <strong class="text-2xl"> Depression</strong>
+              </a>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 text-center">
+              <a href="Health Conditions.html#section3">
+                <img src="stress.jpeg" alt="Photo 3" class="w-300 h-300 rounded-lg">
+                <strong class="text-2xl"> Stress</strong></a>
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2 text-center">
+              <a href="Health Conditions.html#section4">
+                <img src="panic.jpeg" alt="Photo 4" class="w-300 h-300 rounded-lg">
+                <strong class="text-2xl"> Panic</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+  
+   <section class="text-center p-4 ">
+   <h2 class="text-2xl font-semibold mt-3"> Promoting Mental Health</h2>
+    <p class="text-lg">Sustainable Development Goal 3 (SDG 3) aims to ensure healthy lives and promote well-being for all at all ages. Among its key targets is the promotion of mental health and well-being, recognizing that mental health is a critical component of overall health.</p>
+
+   <h2 class="text-2xl font-semibold mt-3" >Importance of Mental Health<h2>
+  <p class="text-lg"> Mental health encompasses our emotional, psychological, and social well-being. It influences how we think, feel, and act, affecting our ability to handle stress, relate to others, and make decisions. Promoting mental health is essential for the development of individuals and communities.</p>
+  <h2 class="text-2xl font-semibold mt-3" >Targets for Mental Health<h2>
+<p>
+    <ul class="items-center text-lg ">
+        <li><b>Target 3.4:</b> Reduce premature mortality from non-communicable diseases and promote mental health and well-being.<br></li>
+
+  <li> <b>Target 3.5:</b> Strengthen the prevention and treatment of substance abuse, including narcotic drug  and harmful use of alcohol.</li>
+    </ul>
+</p>
+<br>
+   </section>
+   <section id="faqs" class="mb-8 faq flex flex-col md:flex-row">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-full md:w-4/5">
+        <h1 class="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
+        <div class="mb-4">
+            <h2 class="text-2xl font-semibold mb-2">What should I do if I experience a panic attack?</h2>
+            <p class="mb-2">If you experience a panic attack, try to focus on your breathing and remind yourself that the attack will pass. Practice grounding techniques, such as focusing on your surroundings or holding an object. Seek help from a healthcare provider if the panic attacks are frequent or severe.</p>
+        </div>
+        <hr>
+        <div class="mb-4">
+            <h2 class="text-2xl font-semibold mb-2">How can I manage stress effectively?</h2>
+            <p class="mb-2">Effective stress management can involve techniques such as regular exercise, mindfulness meditation, deep breathing exercises, and time management strategies. It may also be helpful to identify and address the sources of stress in your life.</p>
+        </div>
+        <hr>
+        <div class="mb-4">
+            <h2 class="text-2xl font-semibold mb-2">When should I seek help for depression?</h2>
+            <p class="mb-2">You should seek help for depression if you experience persistent feelings of sadness, loss of interest in activities, or if your symptoms interfere with daily functioning. If you have thoughts of self-harm or suicide, seek immediate help from a mental health professional or crisis hotline.</p>
+        </div>
+        <hr>
+        <div class="mb-4">
+            <h2 class="text-2xl font-semibold mb-2">Are there support groups for anxiety and depression?</h2>
+            <p class="mb-2">Yes, there are many support groups available for those struggling with anxiety and depression. These can provide valuable peer support and coping strategies. You can find support groups through local mental health organizations, online forums, and community centers.</p>
+        </div>
+    </div>
+    <div class="flex-grow md:w-1/5 mr-3">
+        <img src="faq.jpeg" class="object-cover h-full w-full rounded-lg shadow-lg " alt="FAQ Image">
+    </div>
+</section>
+
+           
+        
+        <div class="footer-container text-white py-10 bg-[#023e8a]">
+            <div class="footer max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Contact Us Section -->
+                <div class="footer-heading space-y-4">
+                    <h4 class="text-xl font-semibold">Contact Us</h4>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                        </svg>
+                        <a href="mailto:serenity@gmail.com" class="hover:text-gray-400">mentalhealth_serenity@gmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <a href="tel:+919985855549" class="hover:text-gray-400">+91 9985855549, +91 957683003</a>
+                    </div>
+                </div>
+                <!-- Logo Section -->
+                <div class="flex flex-col items-center space-y-4">
+                    <img src="logo.png" alt="Serenity Logo" class="h-32 w-32 object-contain">
+                    <p class="text-xl font-bold">SERENITY</p>
+                </div>
+                <!-- Newsletter Section -->
+                <div class="footer-email-form space-y-4">
+                    <h4 class="text-xl font-semibold">Join our newsletter</h4>
+                    <input type="email" id="footer-email" placeholder="Enter your email" class="w-full px-4 py-2 text-black rounded-md">
+                    <input type="submit" id="footer-email-btn" value="Subscribe" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2 rounded-md cursor-pointer">
+                </div>
+            </div>
+        </div>
+      
+        
+        
+        <script src="script.js"> </script>    
+    </body>
+</html>
